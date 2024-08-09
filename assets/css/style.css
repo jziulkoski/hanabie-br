@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    scroll-behavior: smooth;
+    list-style-type: none;
+}
+
+body {
+    background: black;
+}
+
+#bg-glitch {
+    animation: bg-glitch 5s linear infinite;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-hanabie img {
+    width: 20vw;
+    margin: 1vw 5vw 1vw 0;
+}
+
+/* NAV */
+header button {
+    border: none;
+    background-image: url(../image/psychodelic-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1vw 12vw 1vw 1vw;
+}
+
+header button img {
+    width: 8vw;
+    cursor: pointer;
+}
+
+.overlay {
+    height: 100vh;
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+
+    background-color: black;
+    transition: all 0.5s;
+}
+
+.close-btn {
+    background-image: url(../image/psychodelic-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1vw 12vw 1vw 1vw;
+
+    justify-content: left;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+.overlay-content li {
+    text-align: center;
+}
+
+.overlay-content a {
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    border-radius: 0.2vw;
+}
+
+.overlay-content li a:hover {
+    animation: glitch-color 0.2s linear infinite;
+    padding: 0 1vw;
+}
+
+.overlay-content li:not(:first-child) {
+    margin-top: 2vw;
+}
+
+/* SLIDER */
+.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    top: 45vw;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 0.1vw solid #FF00DF;
+    padding: 0.4vw;
+    border-radius: 5vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 1.5vw;
+}
+
+.manual-btn:hover {
+    background-color: #00f8465b;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 0.1vw solid #FF00DF;
+    padding: 0.4vw;
+    border-radius: 5vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    top: 45vw;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 1.5vw;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #00f84683;
+    opacity: 0.8;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #00f84683;
+    opacity: 0.8;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #00f84683;
+    opacity: 0.8;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #00f84683;
+    opacity: 0.8;
+}
+
+/* INTEGRANTES */
+.members .title-members {
+    display: flex;
+    justify-content: center;
+    margin: 4vw 0 4vw 0;
+}
+
+.title-members img {
+    width: 70vw;
+}
+
+.container-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8vw;
+}
+
+.profile.yukina,  .profile.matsuri,  .profile.hettsu, .profile.chika {
+    position: relative;
+}
+
+.profile.matsuri, .profile.chika {
+    margin-top: 5vw;
+}
+
+.img-profile {
+    width: 30vw;
+}
+
+.name-profile {
+    width: 7vw;
+    position: absolute;
+    left: 27.6vw;
+    top: 1.5vw;
+}
+
+.social-media-profile ul {
+    display: flex;
+    justify-content: start;
+    gap: 1vw;
+    margin: 1vw;
+}
+
+.social-media-profile ul li {
+    list-style: none;
+}
+
+.social-media-profile ul li a img {
+    width: 3vw;
+}
+
+.social-media-profile ul li a img:hover {
+    animation: glitch-color 0.2s linear infinite;
+}
+
+.description {
+    background-color: black;
+    width: 15vw;
+
+    position: absolute;
+    top: 36vw;
+    left: 20vw;
+}
+
+.description p {
+    color: white;
+    text-align: left;
+    font-weight: 300;
+    margin: 1.2vw;
+}
+
+.description .occupation {
+    font-size: 1vw;
+}
+
+.description .name {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.description .text-profile {
+    font-size: 1.1vw;
+}
+
+.profile.matsuri .description {
+    top: 39vw;
+}
+
+.profile.chika .description {
+    top: 30vw;
+}
+
+/* SOBRE A BANDA */
+.about-band .header-about-band {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.about-band .header-about-band .text-about-band {
+    margin-left: 8vw;
+    width: 70vw;
+    border-bottom: 0.2vw solid rgb(29, 29, 29);
+}
+
+.text-about-band .img-title-about-band {
+    width: 40vw;
+    margin-bottom: 3vw;
+}
+
+.social-media {
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 2vw;
+}
+
+.social-media li a img {
+    width: 4vw;
+}
+
+.social-media li a img:hover {
+    animation: glitch-color 0.2s linear infinite;
+}
+
+.about-band .header-about-band .img-glitch {
+    width: 45vw;
+    margin-top: 3vw;
+}
+
+.text-description-band {
+    color: white;
+    margin: 3vw 8vw;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+
+/* DISCOGRAFIA */
+.discography .title-discography {
+    display: flex;
+    justify-content: center;
+    margin: 6vw 0;
+}
+
+.discography .title-discography img {
+    width: 70vw;
+}
+
+.grid-discography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin: 0 60px 0 60px;
+}
+
+.grid-discography li a img {
+    width: 350px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+    rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px,
+    rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+    transition: 0.5s;
+}
+
+.grid-discography li a img:hover {
+    box-shadow: rgba(240, 46, 170, 0.9) 10px 10px;
+}
+
+.grid-discography li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.grid-discography li a p {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 0.2vw solid rgb(29, 29, 29);
+    padding: 2vw 0 2vw 0;
+    margin-top: 5vw;
+}
+
+footer .menu-footer ul li a {
+    color: rgb(70, 70, 70);
+    font-weight: 500;
+    font-size: 1.5vw;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .menu-footer ul li a:hover, .footer-info p a:hover {
+    color: rgb(136, 136, 136);
+} 
+
+.footer-info img {
+    width: 23vw;
+}
+
+.footer-info p {
+    color: rgb(70, 70, 70);
+    text-align: center;
+    font-size: 1.2vw;
+}
+
+.footer-info p a {
+    color: rgb(70, 70, 70);
+    transition: 0.3s;
+}
+
+footer img {
+    width: 10vw;
+}
+
+/* KEYFRAMES */
+@keyframes glitch-color {
+    0% {
+      background: #06ADD7;
+    }
+    25% {
+      background: #D706B7;
+    }
+    50% {
+      background: #62DD2D;
+    }
+
+    75% {
+      background:#6622DD;
+    }
+
+    100% {
+        background: #FFF851;
+    }
+  }
+
+@keyframes bg-glitch {
+    0% {
+        background: url(../image/bg-glitch/bg_noizeA-1.png);
+        background-repeat: repeat-y;
+        background-size: 100vw;
+        background-position: center;
+    }
+    3% {
+        background: url(../image/bg-glitch/bg_noizeB-1.png);
+        background-repeat: repeat-y;
+        background-size: 100vw;
+        background-position: center;
+    }
+    6% {
+        background: none;
+    }
+}

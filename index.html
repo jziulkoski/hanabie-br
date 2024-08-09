@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANABIE. | BR</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="bg-glitch">
+        <header>
+            <button class="nav-button" onclick="openDiv()">
+                <img src="./assets/image/icons8-cardápio.svg" alt="Abrir menu">
+            </button>
+
+            <div id="navbar" class="overlay">
+                <button class="close-btn">
+                    <img src="./assets/image/icons8-excluir.svg" alt="Fechar menu" onclick="closeDiv()">
+                </button>
+
+                <ul class="overlay-content">
+                    <li>
+                        <a href="#members" onclick="closeDiv()">INTEGRANTES</a>
+                    </li>
+                    <li>
+                        <a href="#about-band" onclick="closeDiv()">SOBRE A BANDA</a>
+                    </li>
+                    <li>
+                        <a href="#discography" onclick="closeDiv()">DISCOGRAFIA</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="logo-hanabie" class="logo-hanabie">
+                <img  src="./assets/image/logo-hanabie.png" alt="Logo HANABIE.">
+            </div>
+        </header>
+
+        <main>
+            <section class="slider">
+                <div class="slides">
+                    <!-- Radio buttons -->
+                     <input type="radio" name="radio-btn" id="radio1">
+                     <input type="radio" name="radio-btn" id="radio2">
+                     <input type="radio" name="radio-btn" id="radio3">
+                     <input type="radio" name="radio-btn" id="radio4">
+
+                     <!-- Slide Images -->
+                      <div class="slide first">
+                        <img src="./assets/image/img-1.jpg" alt="Imagem 1">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/image/img-2.jpg" alt="Imagem 2">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/image/img-3.jpg" alt="Imagem 3">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/image/img-4.jpg" alt="Imagem 4">
+                    </div>
+
+                    <!-- Navigation auto -->
+                     <div class="navigation-auto">
+                         <div class="auto-btn1"></div>
+                         <div class="auto-btn2"></div>
+                         <div class="auto-btn3"></div>
+                         <div class="auto-btn4"></div>
+                     </div>
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </section>
+
+            <section id="members" class="members">
+                <div class="title-members">
+                    <img src="./assets/image/integrantes-text.png" alt="Integrantes">    
+                </div>
+
+                <ul class="container-members">
+                    <li class="profile yukina">
+                        <img class="img-profile" src="./assets/image/img-yukina.jpg" alt="Foto de Yukina">
+                        <div class="social-media-profile">
+                            <ul>
+                                <li>
+                                    <a href="https://x.com/hanabie_yukina" target="_blank">
+                                        <img src="./assets/image/icons8-x.svg" alt="X de Yukina">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/yukina_hanabie/" target="_blank">
+                                        <img src="./assets/image/icons8-instagram.svg" alt="Instagram de Yukina">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="name-profile" src="./assets/image/text_yukina.png" alt="Yukina">
+                        <div class="description">
+                            <p class="occupation">Vocal</p>
+                            <p class="name">Yukina</p>
+                            <p class="text-profile">- 17/04/1999 ♈</br>
+                                - Tóquio, 149cm</br>
+                                - Tipo sanguíneo: A</br>
+                                - Responsável por escrever as letras</br>
+                                - Screamer</br>
+                                - Banda favorita : Hysteric Panic</br>
+                                - Gosta de personagens "kawaii" e animes de garotas mágicas</p>
+                        </div>
+                    </li>
+
+                    <li class="profile matsuri">
+                        <img class="img-profile" src="./assets/image/img-matsuri.jpg" alt="Foto de Matsuri">
+                        <div class="social-media-profile">
+                            <ul>
+                                <li>
+                                    <a href="https://x.com/hanabie_matsuri" target="_blank">
+                                        <img src="./assets/image/icons8-x.svg" alt="X de Matsuri">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/mtr_hanabie/" target="_blank">
+                                        <img src="./assets/image/icons8-instagram.svg" alt="Instagram de Matsuri">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="name-profile" src="./assets/image/text_matsuri.png" alt="Matsuri">
+                        <div class="description">
+                            <p class="occupation">Guitarra & Vocal</p>
+                            <p class="name">Matsuri</p>
+                            <p class="text-profile">- 27/12/1999 ♑</br>
+                                - Tóquio, 156cm</br>
+                                - Tipo sanguíneo: B</br>
+                                - Guitarrista, vocalista e líder da banda</br>
+                                - Responsável pela composição musical</br>
+                                - Gosta de videogames, animes e vtubers</p>
+                        </div>
+                    </li>
+
+                    <li class="profile hettsu">
+                        <img class="img-profile" src="./assets/image/img-hettsu.jpg" alt="Foto de Hettsu">
+                        <div class="social-media-profile">
+                            <ul>
+                                <li>
+                                    <a href="https://x.com/hanabie_hettsu" target="_blank">
+                                        <img src="./assets/image/icons8-x.svg" alt="X de Hettsu">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/hanabie_hettsu/" target="_blank">
+                                        <img src="./assets/image/icons8-instagram.svg" alt="Instagram de Hettsu">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="name-profile" src="./assets/image/text_hettsu.png" alt="Hettsu">
+                        <div class="description">
+                            <p class="occupation">Baixo & Vocal secundário</p>
+                            <p class="name">Hettsu</p>
+                            <p class="text-profile">- 26/12/1999 ♑</br>
+                                - Saitama, 160cm</br>
+                                - Tipo sanguíneo: O</br>
+                                - Inspirações: músicas de animes</br>
+                                - Gosta de bebidas, Sailor Moon, Grupos de Idols do Japão</br>
+                                - Banda favorita: Yabai T-Shirts Yasan</p>
+                        </div>
+                    </li>
+
+                    <li class="profile chika">
+                        <img class="img-profile" src="./assets/image/img-chika.jpg" alt="Foto de Chika">
+                        <div class="social-media-profile">
+                            <ul>
+                                <li>
+                                    <a href="https://x.com/hanabie_chika" target="_blank">
+                                        <img src="./assets/image/icons8-x.svg" alt="X de Chika">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/hanabie_chika/" target="_blank">
+                                        <img src="./assets/image/icons8-instagram.svg" alt="Instagram de Chika">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="name-profile" src="./assets/image/text_chika.png" alt="Chika">
+                        <div class="description">
+                            <p class="occupation">Baterista</p>
+                            <p class="name">Chika</p>
+                            <p class="text-profile">- 08/05/2000 ♉</br>
+                                - Shizuoka</br>
+                                - Tipo sanguíneo: B</br>
+                                - Membro desde maio de 2023</br>
+                                - Apaixonada por sorvete e Gudetama</br>
+                                - Irmã caçula da banda</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="about-band" class="about-band">
+                <div class="header-about-band">
+                    <div class="text-about-band">
+                        <img class="img-title-about-band" src="./assets/image/sobre-a-banda-text.png" alt="Sobre a banda">
+
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://x.com/ha_na_bie_" target="_blank">
+                                    <img src="./assets/image/icons8-x.svg" alt="X">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ha_na_bie_/" target="_blank">
+                                    <img src="./assets/image/icons8-instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=100090249012483" target="_blank">
+                                    <img src="./assets/image/icons8-facebook.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC45-01kcJeBvPczl1_22KXw/featured" target="_blank">
+                                    <img src="./assets/image/icons8-youtube.svg" alt="YouTube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@hanabie.official" target="_blank">
+                                    <img src="./assets/image/icons8-tik-tok.svg" alt="Tik Tok">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="img-glitch" src="./assets/image/img-glitch.png" alt="Hanabie image">
+                </div>
+
+                <div class="text-description-band">
+                    <p>HANABIE. mescla gêneros de
+                        metalcore com nu metal, hardcore punk
+                        e a estética Harajuku, ocasionando
+                        acordes caóticos do Harajuku Core.
+                        A banda de metal alternativo nasceu inspirada pela Maximum the
+                        Harmone, que impulsionou o
+                        nascimento de Hanabie., eis que se tinha a ideia
+                        de criar uma banda cover do grupo. Logo começaram a criar musicas
+                        autorais, sendo um grupo independente, até fecharem contrato com a
+                        Epic Records Japan, e posteriormente, com a Sony Music Japan, que
+                        mantém de 2023 até hoje.</p>
+                    <p>HANABIE. foi criada em junho de 2015, na cidade de Tokyo.
+                        Formada por Yukina, Matsuri e Hettsu, que estavam no ensino médio,
+                        contaram com a presença da baterista Kaede. Em outubro de 2016, as primeiras
+                        músicas autorais foram escritas, sendo “Crash Over” e “Sweet Killer”.
+                        Em dezembro de 2016 Kaede saiu da banda para se dedicar aos estudos.
+                        Bateristas posteriores foram Boa, que permaneceu de 2017 a 2018, e Sae,
+                        de 2020 a 2023.
+                        Em maio de 2023 Chika foi oficialmente apresentada como nova baterista
+                        da banda. No mesmo ano, HANABIE. já estava sendo amplamente conhecida
+                        a nível internacional, com dois álbuns Girls Reform Manifest e Pardon Me,
+                        I Have to Go Now, possuindo ao menos nove singles e um EP.</p>
+                    <p>O ano de 2024 foi marcado pelo lançamento dos singles OTAKU Lovely
+                        Densetsu e GIRL’ TALK, além de um longo repertório de shows pela Europa
+                        e América do Norte, marcando presença em festivais de metal internacional e realizando a
+                        abertura de grandes shows da Jinjer.</p>
+                    <p>Atualmente HANABIE. faz sucesso no YouTube com 208 mil inscritos no seu
+                        canal, tendo o videoclipe de Pardon Me, I Have to Go Now com 6,9 milhões
+                        de visualizações. No Spotify, mantém a base de 369 mil ouvintes mensais.</p>
+                    <p>O nome da banda HANABIE. (花冷え。) remete ao clima frio da primavera,
+                        como uma referência aos aniversários das quatro membros fundadores (Yukina, Matsuri e Hettsu),
+                        todas nascidos durante o inverno ou a primavera. O "。" significa progresso, sendo estilizada
+                        como "HANABIE." no romaji.
+                    </p>
+                </div>
+            </section>
+
+            <section id="discography" class="discography">
+                <div class="title-discography">
+                    <img src="./assets/image/discografia-text.png" alt="DISCOGRAFIA">
+                </div>
+
+                <ul class="grid-discography">
+                    <li>
+                        <a href="./assets/html/metamorphose.html">
+                            <img src="./assets/image/metamorphose.jpg" alt="METAMORPHOSE!">
+                            <p>Metamorphose! | Single</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/metamorphose.html">
+                            <img src="./assets/image/girls-talk.jpg" alt="GIRL'S TALK">
+                            <p>GIRL’S TALK | Single</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/otaku.html">
+                            <img src="./assets/image/otaku.jpg" alt="OTAKU Lovely Densetsu">
+                            <p>OTAKU Lovely Densetsu | Single</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/believer.html">
+                            <img src="./assets/image/believer.jpg" alt="Believer-cover">
+                            <p>Believer-cover | Single</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/reborn-superstar.html">
+                            <img src="./assets/image/great-man-in-next-life.jpg" alt="Reborn Superstar!">
+                            <p>Reborn Superstar! | Álbum</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/tousou.html">
+                            <img src="./assets/image/tousou.jpg" alt="TOUSOU">
+                            <p>TOUSOU | Single</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/pardon-me.html">
+                            <img src="./assets/image/i-have-to-go-now.jpg" alt="Pardon me, I Have To Go Now">
+                            <p>Pardon me, I Have to </br>
+                                Go Now | Single</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/neet-game.html">
+                            <img src="./assets/image/neet-game.jpg" alt="NEET GAME">
+                            <p>NEET GAME | Single</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/love-rambu.html">
+                            <img src="./assets/image/love-rampage.jpg" alt="LOVE Ranbu">
+                            <p>LOVE ♡ Ranbu | Single</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/reform-manifest.html">
+                            <img src="./assets/image/girls-reform-manifest.jpg"
+                            alt="Girl's Reform Manifest">
+                            <p>Girl’s Reform Manifest | Álbum</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/lcg.html">
+                            <img src="./assets/image/lcg-single.jpg" alt="L.C.G.">
+                            <p>L.C.G. | Single</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./assets/html/blossoms-blooming.html">
+                            <img src="./assets/image/cherry-blossoms-are-blooming.jpg"
+                            alt="Cherry Blossoms Are Blooming">
+                            <p>Cherry Blossoms Are </br>
+                                Blooming | EP</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="menu-footer">
+                <ul>
+                    <li>
+                        <a href="#logo-hanabie">VOLTAR AO TOPO</a>
+                    </li>
+                    <li>
+                        <a href="#members">INTEGRANTES</a>
+                    </li>
+                    <li>
+                        <a href="#about-band">SOBRE A BANDA</a>
+                    </li>
+                    <li>
+                        <a href="#discography">DISCOGRAFIA</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+                <img src="./assets/image/logo-hanabie.png" alt="Logo HANABIE.">
+
+                <p>Acesse o site oficial <a href="https://hanabie.jp/en/" target="_blank">aqui</a>.</p>
+            </div>
+
+            <img class="img-harajukucore" src="./assets/image/harajuku-core.png" alt="Harajuku Core">
+        </footer>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>

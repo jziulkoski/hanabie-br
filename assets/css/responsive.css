@@ -1,0 +1,321 @@
+@media screen and (max-width: 1559px) {
+    /* SLIDER */
+    .slider {
+        height: 100%;
+    }
+
+    .manual-navigation {
+        top: 52vw;
+    }
+
+    .navigation-auto {
+        top: 52vw;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    /* SLIDER */
+    .slider {
+        height: 100%;
+    }
+
+    .manual-navigation {
+        top: 50vw;
+    }
+
+    .navigation-auto {
+        top: 50vw;
+    }
+
+    .manual-btn {
+        border: 0.2vw solid #FF00DF;
+        padding: 0.8vw;
+    }
+
+    .navigation-auto div {
+        border: 0.2vw solid #FF00DF;
+        padding: 0.8vw;
+    }
+
+    /* NAVBAR */
+    .overlay-content a {
+        font-size: 5vw;
+    }
+    
+    .overlay-content li {
+        padding: 2vw 3vw;   
+    }
+
+    /* MÚSICAS E TRADUÇÕES */
+    .song-title h1 {
+        font-size: 12vw;
+    }
+
+    .song-title p {
+        font-size: 4vw;
+    }
+    
+    .song-details .romaji-lyrics, .translate-lyrics {
+        font-size: 2.5vw;
+        line-height: 4vw;
+        margin: 4vw 0;
+    }
+
+    .song-details .romaji-title, .translate-title {
+        line-height: 4vw;
+        font-size: 3.5vw;
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vw 0;
+        text-align: center;
+    }
+    
+    footer .menu-footer ul li a {
+        font-size: 4vw;
+    }
+    
+    
+    .footer-info img {
+        width: 40vw;
+        margin-top: 4vw;
+    }
+    
+    .footer-info p {
+        font-size: 2.5vw;
+        margin-bottom: 4vw;
+    }
+    
+    footer .img-harajukucore {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* HEADER */
+    .logo-hanabie img {
+        width: 40vw;
+    }
+
+    /* NAVBAR */
+    .nav-button {
+        padding: 3vw 16vw 3vw 3vw;
+    }
+
+    .nav-button img {
+        width: 12vw;
+    }
+
+    .close-btn {
+        padding: 3vw 16vw 3vw 3vw;
+    }
+
+    .close-btn img {
+        width: 12vw;
+    }
+
+    .overlay-content a {
+        font-size: 5vw;
+    }
+    
+    .overlay-content li {
+        padding-bottom: 3vw;
+    }
+
+    /* SLIDER */
+    .slider {
+        height: 100%;
+    }
+
+    .manual-navigation {
+        top: 59vw;
+    }
+
+    .navigation-auto {
+        top: 59vw;
+    }
+
+    .manual-btn {
+        border: 0.3vw solid #FF00DF;
+        padding: 1vw;
+    }
+
+    .navigation-auto div {
+        border: 0.3vw solid #FF00DF;
+        padding: 1vw;
+    }
+
+    /* PROFILE */
+    .img-profile {
+        width: 60vw;
+    }
+
+    .name-profile {
+        width: 12vw;
+        left: 55.8vw;
+    }
+
+    .social-media-profile ul {
+        gap: 2vw;
+    }
+
+    .social-media-profile ul li a img {
+        width: 5vw;
+    }
+
+    .description {
+        width: 35vw;
+        padding: 2vw;
+        
+        top: 55vw;
+        left: 25vw;
+    }
+    
+    .description .occupation {
+        font-size: 2vw;
+    }
+    
+    .description .name {
+        font-size: 4.5vw;
+    }
+    
+    .description .text-profile {
+        font-size: 2.5vw;
+    }
+
+    .profile.matsuri .description {
+        top: 58vw;
+    }
+    
+    .profile.chika .description {
+        top: 52vw;
+    }
+
+    /* ABOUT BAND */
+
+    .about-band .header-about-band {
+        flex-wrap: wrap;
+    }
+    
+    .about-band .header-about-band .text-about-band {
+        text-align: center;
+        justify-content: center;
+        border-bottom: none;
+    }
+    
+    .text-about-band .img-title-about-band {
+        width: 80vw;
+        margin: 5vw auto 2vw 2vw;
+    }
+
+    .social-media li a img {
+        width: 6vw;
+        margin-left: 2.5vw;
+    }
+    
+    .about-band .header-about-band .img-glitch {
+        width: 90vw;
+        margin-left: 10vw;
+    }
+    
+    .text-description-band {
+        font-size: 3.5vw;
+        margin-top: 8vw;
+    }
+
+    /* DISCOGRAPHY */
+    .grid-discography li a img {
+        width: 300px;
+    }
+
+    /* FOOTER */
+    footer .menu-footer ul li a {
+        font-size: 4vw;
+    }
+    
+    .footer-info img {
+        width: 50vw;
+        margin-top: 4vw;
+    }
+    
+    .footer-info p {
+        font-size: 3.5vw;
+        margin-bottom: 4vw;
+    }
+    
+    footer .img-harajukucore {
+        width: 30vw;
+    }
+
+    /* TOP DISCO */
+    .album-header {
+        margin-top: 8vw;
+        justify-content: center;
+    }
+
+    .album-cover {
+        width: 60vw;
+        box-shadow: rgba(240, 46, 170, 0.4) 1vw 1vw,
+        rgba(240, 46, 170, 0.3) 1.5vw 1.5vw,
+        rgba(240, 46, 170, 0.2) 2vw 2vw,
+        rgba(240, 46, 170, 0.1) 2.5vw 2.5vw,
+        rgba(240, 46, 170, 0.05) 3vw 3vw;
+
+        margin: 5vw;
+    }
+
+    .album-cover:hover {
+        box-shadow: rgba(240, 46, 170, 0.9) 1vw 1vw;
+    }
+    
+    .album-info h1 {
+        font-size: 6vw;
+        margin-bottom: 2vw;
+    }
+    
+    .album-info p {
+    font-size: 2.5vw;
+    }
+    
+    .album-info .btn-listen-now {
+        margin: 8vw 0 0 28vw;
+    }
+    
+    .album-info .btn-listen-now img {
+        width: 8vw;
+    }
+    
+    /* MÚSICAS E TRADUÇÕES */
+    .songs {
+        margin: 5vw 8vw;
+    }
+
+    .song-title h1 {
+        font-size: 20vw;
+    }
+
+    .song-title p {
+        font-size: 6vw;
+    }
+
+    .song-details {
+        flex-direction: column;
+    }
+    
+    .song-details .romaji-lyrics, .translate-lyrics {
+        font-size: 3.5vw;
+        line-height: 5vw;
+        margin: 4vw 0;
+    }
+
+    .song-details .romaji-title, .translate-title {
+        line-height: 6vw;
+        font-size: 5vw;
+    }
+
+} 
